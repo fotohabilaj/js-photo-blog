@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+    height: ;
+    background-image: url("../img/wall.png");
+}
+h1{
+    text-align: center;
+    font-size: ;
+}
+.photoboard{
+    background-image: url("../img/cork.png");
+}
+.photocard{
+   padding: 30px;
+   margin: auto;
+   background-color: white;
+   height: 750px;
+   width: 660px;
+}
+#pic{
+    width: 600px;
+    height: 600px;    
+}
+#pin{
+    position: absolute;
+    height: 50px;
+    transform: translate(275px,-45px);
+}
+p{
+    padding-top: 20px;
+}
