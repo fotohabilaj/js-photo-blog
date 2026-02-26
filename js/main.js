@@ -13,7 +13,7 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
         const {title,date,url}= card;
         const markup = `<div class="photocard">
             <img id="pin" src="img/pin.svg" alt="">
-            <img id="pic" src="${url}" alt="">
+            <img onclick="overlay_on()" id="pic" src="${url}" alt="">
             <p id="date">${date}</p>
             <p id="title">${title}</p>
         </div>`
@@ -21,3 +21,16 @@ fetch('https://lanciweb.github.io/demo/api/pictures/')
     }
     
 });
+
+const overlayEl = document.querySelector('.overlay')
+
+function overlay_on (){
+    overlayEl.style.display = "block";
+}
+
+
+const buttonEl = document.querySelector('button')
+
+buttonEl.addEventListener('click',function(){
+    overlayEl.style.display = "none";
+})
